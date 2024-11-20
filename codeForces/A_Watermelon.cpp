@@ -5,5 +5,5 @@
 using namespace std;
 
 int main() {
-    cout << "  htis is watermelon";
+    cout << "done";
 }
