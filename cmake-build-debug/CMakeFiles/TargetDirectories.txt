@@ -1,0 +1,5 @@
+/home/ayush/Desktop/compitativeCoading/cmake-build-debug/CMakeFiles/untitled1.dir
+/home/ayush/Desktop/compitativeCoading/cmake-build-debug/CMakeFiles/A_Watermelon.dir
+/home/ayush/Desktop/compitativeCoading/cmake-build-debug/CMakeFiles/A.dir
+/home/ayush/Desktop/compitativeCoading/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ayush/Desktop/compitativeCoading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
