@@ -1,6 +1,0 @@
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/untitled1.dir
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/A_Watermelon.dir
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/A.dir
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/Ai_is_comming.dir
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/dev/compitativeCoading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
