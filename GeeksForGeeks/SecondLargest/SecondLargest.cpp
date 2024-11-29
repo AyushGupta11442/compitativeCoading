@@ -31,6 +31,7 @@
 //Problem: the problem with above code is that if there are more than one type then it will this meathod will not work
 //for ex {5, 5 } there is no second largest largest element
 //so to deal with that we can just check form reverse of array linearly for that element
+//---------------------------
 
 
 //#include <iostream>
