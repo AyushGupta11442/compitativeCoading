@@ -13,3 +13,5 @@ add_executable(MoneyMaking codechef/NUGGET-Moneymaking/MoneyMaking.cpp)
 add_executable(SecondLargest GeeksForGeeks/SecondLargest/SecondLargest.cpp)
 
 add_executable(parenthesisChecker GeeksForGeeks/ParenthesisChecker/parenthesisChecker.cpp)
+add_executable(MoveAllZeroEnd GeeksForGeeks/MoveAllZeroToEND/MoveAllZeroEnd.cpp)
+add_executable(reverseArray GeeksForGeeks/ReverseArray/reverseArray.cpp)
