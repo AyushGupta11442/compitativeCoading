@@ -16,3 +16,4 @@ add_executable(parenthesisChecker GeeksForGeeks/ParenthesisChecker/parenthesisCh
 add_executable(MoveAllZeroEnd GeeksForGeeks/MoveAllZeroToEND/MoveAllZeroEnd.cpp)
 add_executable(reverseArray GeeksForGeeks/ReverseArray/reverseArray.cpp)
 add_executable(rotateArray GeeksForGeeks/RotateArray/rotateArray.cpp)
+add_executable(TheNewYearMEttingFriends codeForces/TheNewYearMeetingFriends/TheNewYearMEttingFriends.cpp)
