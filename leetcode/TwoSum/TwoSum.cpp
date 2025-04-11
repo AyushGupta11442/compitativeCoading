@@ -11,7 +11,22 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 using namespace std;
 
+vector<int> twoSum(vector<int>& arr, int target) {
+    unordered_map <int , int> map ;
+    int n = arr.size();
+    for(int i = 0 ; i < n ; i++){
+        map[arr[i]] = i;
+    }
 
+    for (int i = 0; i < n; i++) {
+        int com = target - arr[i];
+        if(map.find(com) != map.end() && map[com] != i){
+            return vector<int> {i , map[com]};
+        }
+    }
+
+    return {};
+}
 
 
 int main (){
