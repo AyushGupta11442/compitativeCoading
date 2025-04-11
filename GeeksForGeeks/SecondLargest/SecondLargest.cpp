@@ -1,5 +1,5 @@
 // Link: https://www.geeksforgeeks.org/problems/second-largest3735/1
-//Description: in this question we have to just find the second largest element from the givne array
+//Description: in this question we have to just find the second largest element from the given array
 //naive approach: i am thinking to just sort it in ascending order and second last element  would be the second largest element;
 
 
@@ -28,7 +28,7 @@
 //}
 
 
-//Problem: the problem with above code is that if there are more than one type then it will this meathod will not work
+//Problem: the problem with above code is that if there are same digit then this meathod will not work 
 //for ex {5, 5 } there is no second largest largest element
 //so to deal with that we can just check form reverse of array linearly for that element
 //---------------------------
@@ -68,7 +68,7 @@
 
 
 //Problem: this too have some problems that is the time complexity. by doing so we have the complexity of log(nlogn)
-//         but we can so it in log(n) complexity by just keeping track of largest and second largest element in array;
+//         but we can solve it in log(n) complexity by just keeping track of largest and second largest element in array;
 
 #include <iostream>
 #include <vector>

@@ -1,0 +1,76 @@
+Link: https://leetcode.com/problems/two-sum/description/
+
+
+description: this question asks the for given array of (nums) and an integer (target). return the indices of the two number such that they adds up to target.
+
+meathod1 : in this meathod we can just use two loops and check if there is the solution that can adds up to target.
+
+
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+
+vector<int> twoSum(vector<int>& arr, int target) {
+    int n = arr.size();
+    for(int i = 0 ; i  < n ; i++){
+        for(int j = i+1 ; j < n ; j++){
+            if(arr[i] + arr[j] == target){
+                return std::vector<int>{i , j};
+            }
+        }
+    }
+    return {};
+}
+
+
+int main (){
+    vector<int> arr = {3,2,4};
+
+    vector<int> ans = twoSum(arr , 6);
+
+    cout << ans[0]  <<  " " << ans[1] ; 
+}
+
+
+
+
+meathod2 : in this meathod we can use hash fucntion to find the complement of the target. we use two for loop in which in first loop we can just put everthing in the hash mapped 
+        with its index then in second index we can find the complement of the target that if that exist in the map
+
+
+
+vector<int> twoSum(vector<int>& arr, int target) {
+    unordered_map <int , int> map ;
+    int n = arr.size();
+    for(int i = 0 ; i < n ; i++){
+        map[arr[i]] = i;
+    }
+
+    for (int i = 0; i < n; i++) {
+        int com = target - arr[i];
+        if(map.find(com) != map.end() && map[com] != i){
+            return vector<int> {i , map[com]};
+        }
+    }
+
+    return {};
+}
+
+
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map <int , int> hash ;
+    int n = nums.size();
+    for(int i = 0 ; i < n ; i++){
+        int complement = target - nums[i];
+            if (hash.find(complement) != hash.end()) {
+                return {hash[complement], i};
+            }
+            hash[nums[i]] = i;
+    }
+
+   
+    return {};
+}
