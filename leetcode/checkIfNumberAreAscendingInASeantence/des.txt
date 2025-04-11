@@ -1,0 +1,35 @@
+link: https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/
+
+
+description: In this question there is a given string we need to check if all the numbers present in string is strictly increasing or not 
+
+
+meathod1: i divided the problem into two problem 
+                1) find the numbers from the given string 
+                2) check if the numbers are in strictly increasing order or not
+
+ bool areNumbersAscending(string s) {
+    int n = s.size();
+    vector<long long > arr ;
+    for(int i = 0 ; i < n ; i++){
+        if(s[i] <= '9' &&  s[i] >= '0'){
+            long long  num = 0;
+            while(s[i] <= '9' &&  s[i] >= '0'){
+                num = ((num * 10) + (s[i] - '0'));
+                i++;
+            }
+            arr.push_back(num);
+        }
+    } 
+    for(int a : arr){
+        cout << a << " ";
+    } 
+    
+    for(int i = 1 ; i < arr.size() ; i++){
+        if(arr[i] <= arr[i-1]){
+            return false;
+        }
+        
+    }
+    return true;
+}
