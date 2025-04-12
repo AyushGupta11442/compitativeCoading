@@ -1,0 +1,9 @@
+link: https://codeforces.com/problemset/problem/1901/A
+
+
+des: in this question it asked the max difference between the points 
+
+
+sol: one edge case is the distance between the last point and the petrol station needs to be doubled the its the last point not the last station 
+
+
